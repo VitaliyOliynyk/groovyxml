@@ -14,5 +14,6 @@ class DocumentReader {
         xml.item.each { item ->
             println "${item.name},  ${item.@qty}, ${item.type}"
         }
+
     }
 }

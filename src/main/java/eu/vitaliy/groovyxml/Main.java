@@ -8,8 +8,10 @@ public class Main {
 
         //Create document
         DocumentCreator documentCreator = DocumentCreator.newInstance(fileName);
-        documentCreator.createDokument();
-
+        documentCreator.createDokument(
+                        new Pojo("Orange", "Fruit", 10),
+                        new Pojo("Apple", "Fruit", 6 )
+        );
 
         //Read document
         DocumentReader documentReader = DocumentReader.newInstance(fileName);
